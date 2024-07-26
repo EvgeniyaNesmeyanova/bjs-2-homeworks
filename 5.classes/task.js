@@ -124,6 +124,9 @@ library.addBook(
     "Аркадий и Борис Стругацкие",
   ),
 );
+
+library.addBook(new NovelBook("Меч Предназначения", 1992, 384, "А. Сапковский"));
+library.addBook(new FantasticBook(" ", 1992, 384, "Джон Толкин"));
 library.addBook(new NovelBook("Герберт Уэллс", "Машина времени", 1895, 138));
 library.addBook(new Magazine("Мурзилка", 1924, 60));
 
