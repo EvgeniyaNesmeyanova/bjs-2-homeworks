@@ -99,9 +99,9 @@ class Library {
 
   giveBookByName(bookName) {
     
-    const index = this.books.findIndex((book) => book.name === bookName);
+    const index = this.books.findIndex(book => book.name === bookName);
     if (index !== -1) {
-      return this.books.splice(index, 1);
+      return this.books.splice(index, 1)[0];
     }
     return null;
   }
