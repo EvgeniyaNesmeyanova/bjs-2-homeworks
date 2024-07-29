@@ -132,9 +132,10 @@ library.addBook(new NovelBook('А. Сапковский', 'Меч Предназ
 library.addBook(new FantasticBook("Джон Толкин", "Властелин колец", 1992, 384));
 library.addBook(new NovelBook("Герберт Уэллс", "Машина времени", 1895, 138));
 library.addBook(new Magazine("Мурзилка", 1924, 60));
+library.addBook(new Magazine("Типовой школьный журнал", 2019, 102));
 
 console.log(library.findBookBy("name", "Война и мир")); //null
-console.log(library.findBookBy("releaseDate", 1924).name); //"Мурзилка"
+console.log(library.findBookBy("releaseDate", 2019).name); //"Типовой школьный журнал"
 
 console.log("Количество книг до выдачи: " + library.books.length); //Количество книг до выдачи: 6
 library.giveBookByName("Машина времени");
